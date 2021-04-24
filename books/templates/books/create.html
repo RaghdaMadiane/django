@@ -1,0 +1,9 @@
+{% extends "layout/main.html"%}
+{%block body%}
+<h1>Create Book</h1>
+<form action="{% url 'create' %}" method="post">
+{%csrf_token%}
+{{ form.as_p }}
+<button type ="submit"> Add a book </button>
+</form>
+{% endblock %}

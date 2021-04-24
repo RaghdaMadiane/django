@@ -1,0 +1,6 @@
+<h1>List of posts<h1>
+{%for book in books%}
+<h3>{{book.title}}</h3>
+<h3>{{book.author}}</h3>
+{% endfor %}
+<a  href='create' type="button" > Create a book </a>

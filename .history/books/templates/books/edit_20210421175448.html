@@ -1,0 +1,6 @@
+<h1>Edit Book</h1>
+<form action="{% url 'update' book.id %}" method="post">
+{%csrf_token%}
+{{ form.as_p }}
+<button type ="submit"> Update a book  </button>
+</form>

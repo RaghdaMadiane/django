@@ -1,0 +1,9 @@
+{% extends "layout/main.html"%}
+{%block body%}
+<h1>Edit Book</h1>
+<form action="{% url 'edit' book.isbn.id %}" method="post">
+{%csrf_token%}
+{{ form.as_p }}
+<button type ="submit"> Update a book  </button>
+</form>
+{% endblock %}
